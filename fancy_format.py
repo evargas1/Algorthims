@@ -57,9 +57,40 @@ def inter_anagram(s1, s2):
 
     return True 
     
-
-
+# good practice to build an anagram from scratch may be 
+# asked a job intervidw
 print(inter_anagram('god', 'dog'))
+
+
+# Given a integer array output all the unique pairs that sum up to a specfic value k.
+# so the input 
+# pair_sum ([1,3,2,2], 4)
+#    would return 2 pairs 
+# (1,3)
+# (2,2)
+
+def pair_sum(array, k):
+    if len(array) < 2:
+        return print('Too Small')
+    seen = set()
+    output = set()
+
+    for num in array:
+        target = k - num
+
+        if target not in seen:
+            seen.add(num)
+        else:
+            output.add((min(num, target), max(num, target)))
+
+    print("\n".join(map(str, list(output))))
+
+
+
+pair_sum([1,3,2,2], 4)
+# this function is not only for arrays it can be used to solve
+# other forms of list rather its tuples lists or strings
+
 
 
 
