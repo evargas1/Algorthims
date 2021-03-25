@@ -70,6 +70,9 @@ print(inter_anagram('god', 'dog'))
 # (2,2)
 
 def pair_sum(array, k):
+    # not an actual array probs called it that 
+    # because similar to arrays all the #s 
+    # where the same 
     if len(array) < 2:
         return print('Too Small')
     seen = set()
@@ -82,7 +85,7 @@ def pair_sum(array, k):
             seen.add(num)
         else:
             output.add((min(num, target), max(num, target)))
-
+# time complexity == O(n**2)
     print("\n".join(map(str, list(output))))
 
 
