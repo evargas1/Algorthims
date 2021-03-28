@@ -1,4 +1,4 @@
-ef pair_sum(array, k):
+def pair_sum(array, k):
     # not an actual array probs called it that 
     # because similar to arrays all the #s 
     # where the same 
