@@ -12,6 +12,7 @@
 #
 
 def mine_sweeper(bombs, num_rows, num_cols):
+    # set every box in the matrix to 0
     field = [[0 for i in range(num_cols)] for j in range(num_rows)]
     
     for bomb_location in bombs:
@@ -21,6 +22,7 @@ def mine_sweeper(bombs, num_rows, num_cols):
 
         row_range = range(bomb_row - 1, bomb_row + 2)
         col_range = range(bomb_col - 1, bomb_col + 2)
+        # i dont understand these two assigmenyts
 
         for i in row_range:
             current_i = i
@@ -33,4 +35,4 @@ def mine_sweeper(bombs, num_rows, num_cols):
     return field
     # this is an exmaple of list comphensions
 
-print(mine_sweeper([[0,0], [1,2]], 3, 4))
+print(mine_sweeper([[0, 0], [0, 1], [1, 0]], 3, 4))
