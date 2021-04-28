@@ -53,8 +53,7 @@ def inter_anagram(s1, s2):
     for k in count:
         if count[k] != 0:
             return False
-
-
+            
     return True 
     
 # good practice to build an anagram from scratch may be 

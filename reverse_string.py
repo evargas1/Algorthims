@@ -43,6 +43,9 @@ def len_revsrse(s):
     while i < length:
         if s[i] not in spaces:
             word_start = i
+            # intializes and 
+            # will begin the reverseing process
+
 
             while i < length and s[i] not in spaces:
                 i += 1

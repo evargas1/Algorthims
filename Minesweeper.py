@@ -35,4 +35,4 @@ def mine_sweeper(bombs, num_rows, num_cols):
     return field
     # this is an exmaple of list comphensions
 
-print(mine_sweeper([[0, 0], [0, 1], [1, 0]], 3, 4))
+print(mine_sweeper([[0, 0], [1, 2]], 3, 4))

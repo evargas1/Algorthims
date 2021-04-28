@@ -3,6 +3,8 @@ def common_elements(a, b):
     p2 = 0
 
     result = []
+    print(len(a))
+    print(len(b))
 
     while p1 < len(a) and p2 < len(b):
         if a[p1] == b[p2]:
@@ -18,4 +20,4 @@ def common_elements(a, b):
     return result
 
 
-print(common_elements([1,3,4,6,7,8], [1,2,6,9,8,6]))
+print(common_elements([1,3,4,6,7,9], [1,2,4,5,9,10]))
