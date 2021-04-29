@@ -14,3 +14,21 @@ def unique(string):
 
 print(unique('a b cdef'))
 
+"""
+solve this same problem but you cant
+use the built in functions
+
+"""
+def unique_no(s):
+    s = s.replace(' ', '')
+    characters = set()
+
+    for letter in s:
+        if letter in characters:
+            return False
+        else:
+            characters.add(letter)
+    return True
+
+print(unique_no('hok sj'))
+
