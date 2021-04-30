@@ -18,6 +18,12 @@ print(unique('a b cdef'))
 solve this same problem but you cant
 use the built in functions
 
+
+No joke this algo is so easy he 
+should have started with this!!!
+Like dude this is two easy loops
+
+Read Documenation in the set
 """
 def unique_no(s):
     s = s.replace(' ', '')
