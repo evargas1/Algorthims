@@ -45,3 +45,42 @@ def non_repeating(s):
 
 print(non_repeating('I apple Love eating'))
 
+
+def non(s):
+    char_count = {}
+    s = s.replace(' ', '').lower()
+
+    for c in s:
+        if c in char_count:
+            char_count[c] += 1
+        else:
+            char_count[c] = 1
+
+    unique = []
+    y = sorted(
+        char_count.items(),
+        key=lambda x: x[1]
+        # will sort by second
+        # tuple posistion in this
+        # case the value
+    )
+    print(y[0])
+    print(y)
+    
+
+    for item in y:
+        # checking the index 
+        # posistion of 1 now a tuple
+        # which use to be the value
+        # or number
+        print(item)
+        if item[1] == y[0][1]:
+            # [0] first value
+            # [1] the value in the first key value
+            
+            # index posistion?
+            unique.append(item)
+
+    return unique
+
+print(non('uuu iiiiiikkkkkklllll'))
